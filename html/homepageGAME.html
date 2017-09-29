@@ -5,6 +5,64 @@
 		header{
 			margin-left: 750px;
 		}
+		.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+		}
+
+		.container a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;    
+			border: none;
+			outline: none;
+			color: black;
+			padding: 14px 16px;
+			background-color: inherit;
+		}
+
+		.container a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
 	</style>
 		<meta charset="utf-8"/>
 		<title>WIKI</title>
@@ -17,301 +75,148 @@
 		Japanese, Chinese, Roman, Greek, Nordic, Celtic, Mayan and Egyptian</h3>
 		<h3>there are over 90 playable Gods</h3>
 		<ul>
-			<h4>Hindu</h4>
+			<br>
 			<ul>
-				<ul>
-					Bakasura
-				</ul>
-				<ul>
-					Kali
-				</ul>
-				<ul>
-					Agni
-				</ul>
-				<ul>
-					Rama
-				</ul>
-				<ul>
-					Vamana
-				</ul>
-				<ul>
-					Kumbhakarna
-				</ul>
-				<ul>
-					Ravana
-				</ul>
-				<ul>
-					Ganesha
-				</ul>
+				<li><a class="active" href="homepageGAME.html">Home</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Hindu</a>
+					<div class="dropdown-content">						
+						<a href="...">Agni</a>					
+						<a href="...">Bakasura</a>
+						<a href="...">Ganesha</a>
+						<a href="...">Kali</a>	
+						<a href="...">Kumbhakarna</a>
+						<a href="...">Rama</a>											
+						<a href="...">Ravana</a>
+						<a href="...">Vamana</a>						
+					</div>
+				</li>
 			</ul>
-			<h4>Japanese</h4>
-			<ul>
-				<ul>
-					Izanami
-				</ul>
-				<ul>
-					Sun Wukong
-				</ul>
-				<ul>
-					Amaterasu
-				</ul>
-				<ul>
-					Susanoo
-				</ul>
-				<ul>
-					Raijin
-				</ul>
-				<ul>
-					Kuzenbo
-				</ul>
-			</ul>
-			<h4>Chinese</h4>
-			<ul>
-				<ul>
-					Nu Wa
-				</ul>
-				<ul>
-					Hou Yi
-				</ul>
-				<ul>				
-					Ao Kuang
-				</ul>
-				<ul>
-					Erlang Shen
-				</ul>
-				<ul>	
-					Chang'e
-				</ul>
-				<ul>
-					Jing Wei
-				</ul>
-				<ul>
-					He Bo
-				</ul>
-				<ul>
-					Xing Tian
-				</ul>
-				<ul>
-					Zhong Kui
-				</ul>
-				<ul>
-					Guan Yu
-				</ul>
-				<ul>
-					Ne Zhe
-				</ul>
-				<ul>
-					Da Ji
-				</ul>
-			</ul>			
-			<h4>Roman</h4>
-			<ul>
-				<ul>
-					Bellona
-				</ul>
-				<ul>				
-					Mercury
-				</ul>
-				<ul>
-					Sol
-				</ul>
-				<ul>	
-					Nox
-				</ul>
-				<ul>
-					Janus
-				</ul>
-				<ul>
-					Terra
-				</ul>
-				<ul>
-					Vulcan
-				</ul>
-				<ul>
-					Cupid
-				</ul>
-				<ul>
-					Bacchus
-				</ul>
-				<ul>
-					Sylvanus
-				</ul>
-			</ul>			
-			<h4>Greek</h4>
-			<ul>
-				<ul>
-					Medusa
-				</ul>
-				<ul>
-					Chronos
-				</ul>
-				<ul>	
-					Thantos
-				</ul>
-				<ul>	
-					Nemesis
-				</ul>
-				<ul>	
-					Hades
-				</ul>
-				<ul>	
-					Aphrodite
-				</ul>
-				<ul>	
-					Chiron
-				</ul>
-				<ul>	
-					Arachne
-				</ul>
-				<ul>	
-					Apollo
-				</ul>
-				<ul>	
-					Athena
-				</ul>
-				<ul>	
-					Scylla
-				</ul>
-				<ul>	
-					Zeus
-				</ul>
-				<ul>	
-					Poseidon
-				</ul>
-				<ul>	
-					Ares
-				</ul>
-				<ul>	
-					Hercules
-				</ul>
-				<ul>
-					Nike	
-				</ul>
-			</ul>			
-			<h4>Nordic</h4>
-			<ul>
-				<ul>
-					Loki
-				</ul>
-				<ul>
-					Ratatoskr
-				</ul>
-				<ul>	
-					Skadi
-				</ul>
-				<ul>	
-					Hel
-				</ul>
-				<ul>	
-					Fenrir
-				</ul>
-				<ul>	
-					Freya
-				</ul>
-				<ul>	
-					Thor
-				</ul>
-				<ul>	
-					Odin
-				</ul>
-				<ul>	
-					Ullr
-				</ul>
-				<ul>	
-					Fafnir
-				</ul>
-				<ul>	
-					Ymir
-				</ul>
-				<ul>	
-					Tyr
-				</ul>
-			</ul>
-			<h4>Celtic</h4>
-			<ul>
-				<ul>
-					The Morrigan
-				</ul>
-				<ul>	
-					Cernunnos
-				</ul>
-				<ul>	
-					Cu Chulain
-				</ul>	
-				<ul>	
-					Artio
-				</ul>
-			</ul>
-			<h4>Mayan</h4>
-			<ul>
-				<ul>
-					Kukulkan
-				</ul>
-				<ul>	
-					Ah Muzen Cab
-				</ul>
-				<ul>	
-					Awilix
-				</ul>
-				<ul>	
-					Ah Puch
-				</ul>
-				<ul>	
-					Camazotz
-				</ul>
-				<ul>	
-					Hun Batz
-				</ul>
-				<ul>	
-					Cabrakan
-				</ul>
-				<ul>	
-					Xbalancque
-				</ul>
-				<ul>	
-					Chaac
-				</ul>
-			</ul>
-			<h4>Egyptian</h4>
-			<ul>
-				<ul>
-					Anubis
-				</ul>
-				<ul>	
-					Bastet
-				</ul>
-				<ul>	
-					Ra
-				</ul>
-				<ul>	
-					Neith
-				</ul>
-				<ul>						
-					Serqet
-				</ul>
-				<ul>	
-					Thoth
-				</ul>
-				<ul>	
-					Khepri
-				</ul>
-				<ul>	
-					Anhur
-				</ul>
-				<ul>	
-					Osiris
-				</ul>
-				<ul>	
-					Isis
-				</ul>
-				<ul>	
-					Geb
-				</ul>
-				<ul>	
-					Sobek
-				</ul>
-			</ul>
-		</ul>
+            <li class = "dropdown">
+				<a href="#" class = "dropbtn">Japanese</a>
+				<div class = "dropdown-content">	
+					<a href="...">Amaterasu</a>			  
+					<a href="...">Izanami</a>
+					<a href="...">Kuzenbo</a>
+					<a href="...">Raijin</a>
+					<a href="...">Sun Wukong</a>
+					<a href="...">Susanoo</a>
+				  </div>
+             </li>
+            <li class = "dropdown">
+				<a href="#" class = "dropbtn">Chinese</a>
+				<div class = "dropdown-content">
+					<a href="...">Ao Kuang</a>
+					<a href="...">Chang'e</a>
+					<a href="...">Da Ji</a>
+					<a href="...">Erlang Shen</a>
+					<a href="...">Guan Yu</a>
+					<a href="...">He Bo</a>
+					<a href="...">Hou Yi</a>					                    
+                    <a href="...">Jing Wei</a>                                        
+                    <a href="...">Ne Zhe</a>
+					<a href="...">Nu Wa</a>
+					<a href="...">Xing Tian</a>
+                    <a href="...">Zhong Kui</a>                    
+				</div>
+            </li>
+			<li class = "dropdown">
+				<a href="#" class = "dropbtn">Roman</a>
+				<div class = "dropdown-content">
+					<a href="...">Bacchus</a>
+					<a href="...">Bellona</a>
+					<a href="...">Cupid</a>	
+					<a href="...">Janus</a>
+					<a href="...">Mercury</a>					
+					<a href="...">Nox</a>
+					<a href="...">Sol</a>
+					<a href="...">Sylvanus</a>
+					<a href="...">Terra</a>					
+					<a href="...">Vulcan</a>						
+					
+				</div>
+			</li>
+			<li class = "dropdown">			
+				<a href = "#" class = "dropbtn">Greek</a>
+				<div class = "dropdown-content">
+					<a href="...">Aphrodite</a>
+					<a href="...">Apollo</a>
+					<a href="...">Arachne</a>
+					<a href="...">Ares</a>					
+					<a href="...">Athena</a>
+					<a href="...">Chiron</a>
+					<a href="...">Chronos</a>
+					<a href="...">Hades</a>
+					<a href="...">Hercules</a>
+					<a href="...">Medusa</a>
+					<a href="...">Nemesis</a>
+					<a href="...">Nike</a>
+					<a href="...">Poseidon</a>
+					<a href="...">Scylla</a>
+					<a href="...">Thantos</a>					
+					<a href="...">Zeus</a>
+				</div>
+			</li>
+			<li class = "dropdown">			
+				<a href = "#" class = "dropbtn">Nordic</a>
+				<div class = "dropdown-content">
+					<a href="...">Fafnir</a>
+					<a href="...">Fenrir</a>
+					<a href="...">Freya</a>
+					<a href="...">Hel</a>
+					<a href="...">Loki</a>					
+					<a href="...">Ratatoskr</a>
+					<a href="...">Odin</a>
+					<a href="...">Skadi</a>
+					<a href="...">Tyr</a>				
+					<a href="...">Thor</a>					
+					<a href="...">Ullr</a>						
+					<a href="...">Ymir</a>
+				</div>
+			</li>
+			<li class = "dropdown">
+				<a href = "#" class = "dropbtn">Celtic</a>
+				<div class = "dropdown-content">
+					<a href="file:///H:/Smite%20Lore/artio.html">Artio </a>
+					<a href="file:///H:/Smite%20Lore/Cernunnos.html">Cernunnos</a>
+					<a href="file://H:/Smite%20Lore/Cu_Chulainn.html">Cu Chulainn</a>	
+					<a href="file://H:/Smite%20Lore/The_Morrigan.html">The Morrigan</a>
+				</div>
+			</li>
+			<li class = "dropdown">
+				<a href = "#" class = "dropbtn">Mayan</a>
+				<div class = "dropdown-content">
+					<a href="...">Ah Muzen Cab</a>
+					<a href="...">Ah Puch</a>
+					<a href="...">Awilix</a>
+					<a href="...">Chaac</a>
+					<a href="...">Cabrakan</a>
+					<a href="...">Camazotz</a>
+					<a href="...">Hun Batz</a>
+					<a href="...">Kukulkan</a>
+					<a href="...">Xbalancque</a>m					
+				</div>
+			</li>
+			<li class = "dropdown">
+				<a href = "#" class = "dropbtn">Egyptian</a>
+				<div class = "dropdown-content">
+					<a href="...">Anhur</a>
+					<a href="...">Anubis</a>
+					<a href="...">Bastet</a>
+					<a href="...">Geb</a>
+					<a href="...">Isis</a>
+					<a href="...">Khepri</a>
+					<a href="...">Neith</a>	
+					<a href="...">Osiris</a> 					
+					<a href="...">Ra</a>
+					<a href="...">Serqet</a>
+					<a href="...">Sobek</a>					
+					<a href="...">Thoth</a>
+											
+					
+					
+			</div>
+		</li>
 		<footer>
 			<h6>WIKI about games</h6>
 		</footer>
